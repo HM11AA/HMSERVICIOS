@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset='utf-8'>
+	 <title> HM</title>
+	 <link href="css/estilo.css" rel='stylesheet' type='text/css'>
+</head>
+<body>
+     <header>
+    <div id="logo">
+	    <img src="img/hm.jpg" alt="logo" height="90" width="150">
+	 </div>
+    </header>
+<section id="formulario">
+    <h2>Registro</h2>
+	
+	<form name="Nuevo Usuario" method="POST" action="php/ConexionCrearUsuario.php">
+	      Nickname:<br>
+		  <input type="text" name="nickname" pattern="[a-zA-z0-9]+" placeholder="Ingresa tu Nickname" required><br><br>
+		  Contraseña:<br>
+		  <input type="password" name="contraseña" maxlength="15" autocomplete="new-password" placeholder="Ingresa tu Contraseña" required><br><br>
+		  Nonbre:<br>
+		   <input type="text" name="nombre" placeholder="Ingresa tu Nombre" required><br><br>
+		  Apellidos:<br>
+		  <input type="text" name="apellidos" placeholder="Ingresa Los Apellidos" required><br><br>
+		  Email:<br>
+		  <input type="email" name="correo" placeholder="Ingresa Tu Email" required><br><br>
+		  Edad:<br>
+		  <input type="number" name="edad" min="15" placeholder="Ingresa Tu Edad" required><br><br>
+		  Descripcion:<br>
+		  <textarea name="descripcion" placeholder="Ingresa Tu Descripcion"required></textarea><br><br>
+		  
+		  <input type="submit" name="enviar" class="botton" value="Registrar">
+		  <input type="reset" class="botton" value="Borrar"><br>
+		  <hr>
+     </form>
+</section>
+
+<section id="formulario2">
+      <h2>Inicio de Sesion</h2>
+	  
+	  <form name="contacto" method="POST" action="php/IniciarSesion.php">
+	     Nickname:<br>
+		  <input type="text" name="nickname" placeholder="Ingresa tu Nickname" required><br><br>
+		   Contraseña:<br>
+		  <input type="password" name="Contraseña" autocomplete="off" placeholder="Ingresa tu Contraseña" required><br><br>
+		  <hr>
+		  
+		  <input type="submit" name="enviar" class="botton" value="Iniciar">
+	  </form>
+</section>
+
+</body>
+</html>
